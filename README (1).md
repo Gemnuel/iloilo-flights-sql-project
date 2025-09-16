@@ -1,6 +1,6 @@
-# ✈️ Iloilo Flights SQL Project
+Iloilo Flights SQL Project
 
-## 📌 Project Overview
+ Project Overview
 
 This project explores and analyzes flight data from Iloilo Airport using
 SQL.\
@@ -12,7 +12,7 @@ It includes queries for:\
 
 ------------------------------------------------------------------------
 
-## 📂 Repository Contents
+ Repository Contents
 
 -   `MyProjectFile.xlsx` → Excel file containing raw flight data\
 -   `MyDataCleaningProject.sql` → Queries for cleaning and validating
@@ -23,9 +23,9 @@ It includes queries for:\
 
 ------------------------------------------------------------------------
 
-## 🚀 How to Run the Project
+ How to Run the Project
 
-### Option A: Import Excel File into MySQL
+Option A: Import Excel File into MySQL
 
 1.  Open **MySQL Workbench**.\
 
@@ -65,9 +65,9 @@ If you prefer, you can run the `.sql` file directly:
 
 ------------------------------------------------------------------------
 
-## 🔍 Example Queries
+ Example Queries
 
-### 1. Which airline has the most passengers?
+1. Which airline has the most passengers?
 
 ``` sql
 SELECT a.airline_name, COUNT(p.passenger_id) AS total_passenger
@@ -78,7 +78,7 @@ GROUP BY a.airline_name
 ORDER BY total_passenger DESC;
 ```
 
-### 2. Which airline has the most delayed passengers?
+2. Which airline has the most delayed passengers?
 
 ``` sql
 WITH Delayed_flight AS (
@@ -95,15 +95,14 @@ ORDER BY total_affected DESC;
 ```
 
 ------------------------------------------------------------------------
-
-## ✅ Requirements
+ Requirements
 
 -   MySQL Workbench (or any SQL IDE)\
 -   GitHub (to download the repo)
 
 ------------------------------------------------------------------------
 
-## 🏆 Key Skills Demonstrated
+ Key Skills Demonstrated
 
 -   SQL Joins\
 -   Common Table Expressions (CTEs)\
